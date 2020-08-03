@@ -1,7 +1,7 @@
 # HomeworkCProject
 tareas
 
-
+```
 library(readr)
 library(lubridate)
 
@@ -20,7 +20,7 @@ hist(feb$Global_active_power,col="red", main="Global active Power" , xlab="Globa
 
 feb= feb[order(feb$Date),]  #order
 plot(feb$Time,feb$Global_active_power,pch=19,ty="s",xlab=NA, ylab="Global Active Power (kilowatts)", ylim=c(0,8))
-```
+
 #plot3
 library(ggplot2)
 ggplot(feb, aes(x=Time,y=Sub_metering_1))+ geom_line()+ geom_line(y=feb$Sub_metering_2, color="red")+ geom_line(y=feb$Sub_metering_3, color="blue")
